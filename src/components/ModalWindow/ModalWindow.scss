@@ -1,0 +1,86 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+.topic-choise {
+  position: fixed;
+  width: 40%; 
+  height: 40%; 
+  top: 50%;
+  left: 40%;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: #a492bc;
+  z-index: 0;
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #a492bc;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.choise-page {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+
+  width: 92%;
+
+  background: #52485e;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  text-align: center;
+  text-decoration: none;
+
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.choise-page:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6), .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
+}
+
+.choise-page:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6), .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
+}
+
+@media screen and (max-width: 720px) {
+
+  .topic-choise {
+    position: fixed;
+    width: 50%; 
+    height: 50%; 
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+  
+}

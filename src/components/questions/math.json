@@ -1,0 +1,110 @@
+[
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 2 + 2?",
+    "variants": ["3", "4", "5", "6"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "500"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the product of 5 * 8?",
+    "variants": ["20", "35", "40", "56"],
+    "correct": 3,
+    "incorrectly": [0, 1, 2],
+    "price": "1,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the square root of 144?",
+    "variants": ["10", "11", "12", "13"],
+    "correct": 2,
+    "incorrectly": [0, 1, 3],
+    "price": "2,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 20 - 7?",
+    "variants": ["10", "11", "12", "13"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "4,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 48 ÷ 6?",
+    "variants": ["6", "7", "8", "9"],
+    "correct": 2,
+    "incorrectly": [0, 1, 3],
+    "price": "8,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the sum of the angles in a triangle?",
+    "variants": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "16,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 3 squared?",
+    "variants": ["6", "9", "12", "15"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "32,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 10 factorial?",
+    "variants": ["90", "100", "110", "120"],
+    "correct": 3,
+    "incorrectly": [0, 1, 2],
+    "price": "64,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 2 to the power of 5?",
+    "variants": ["8", "10", "16", "32"],
+    "correct": 3,
+    "incorrectly": [0, 1, 2],
+    "price": "125,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of the equation 3x + 7 = 16, when solved for x?",
+    "variants": ["3", "4", "5", "6"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "250,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the value of pi (π) to two decimal places?",
+    "variants": ["3.12", "3.14", "3.16", "3.18"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "500,000"
+  },
+  {
+    "subject": "Mathematics",
+    "letter": ["A", "B", "C", "D"],
+    "question": "What is the result of 10% of 200?",
+    "variants": ["20", "30", "40", "50"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "1,000,000"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "When did the French Revolution take place?",
+    "variants": ["1700", "1800", "1900", "1789"],
+    "correct": 3,
+    "incorrectly": [0, 1, 2],
+    "price": "500"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who was the first President of the United States?",
+    "variants": ["Thomas Jefferson", "George Washington", "John Adams", "Abraham Lincoln"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "1,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "When did World War I take place?",
+    "variants": ["1914/1918", "1939/1945", "1870/1871", "1812"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "2,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who was the pharaoh during the construction of the pyramids?",
+    "variants": ["Khufu", "Tutankhamun", "Cleopatra", "Ramesses II"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "4,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who wrote 'War and Peace'?",
+    "variants": ["Fyodor Dostoevsky", "Leo Tolstoy", "Mark Twain", "Charles Dickens"],
+    "correct": 1,
+    "incorrectly": [0, 2, 3],
+    "price": "8,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who was the Prime Minister of the United Kingdom during World War II?",
+    "variants": ["Winston Churchill", "Franklin Roosevelt", "Adolf Hitler", "Benito Mussolini"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "16,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who is considered the founder of the Russian Empire?",
+    "variants": ["Peter the Great", "Ivan the Terrible", "Alexander I", "Ivan IV"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "32,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who authored 'The Communist Manifesto'?",
+    "variants": ["Karl Marx and Friedrich Engels", "Walter Marx", "Lenin", "Stalin"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "64,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who was the last Emperor of Russia?",
+    "variants": ["Peter I", "Ivan IV", "Nicholas II", "Alexander II"],
+    "correct": 2,
+    "incorrectly": [0, 1, 3],
+    "price": "125,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "When did Mikhail Gorbachev's 'Perestroika' reform take place?",
+    "variants": ["Late 20th century", "Mid-20th century", "Late 19th century", "Early 21st century"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "250,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "Who was the first President of Russia after the dissolution of the USSR?",
+    "variants": ["Mikhail Gorbachev", "Vladimir Putin", "Boris Yeltsin", "Dmitry Medvedev"],
+    "correct": 2,
+    "incorrectly": [0, 1, 3],
+    "price": "500,000"
+  },
+  {
+    "subject": "History",
+    "letter": ["A", "B", "C", "D"],
+    "question": "When was the Magna Carta signed?",
+    "variants": ["1215", "1066", "1348", "1492"],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
+    "price": "1,000,000"
+  }
+]

@@ -1,0 +1,124 @@
+.aside-rewards {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.reward-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding: 10px 20px 0px;
+  align-items: center;
+  background-color: #dec6ff;
+  width: 25vw;
+  height: 100vh;
+}
+
+.reward-card {
+  display: flex;
+  width: 80%;
+  height: 40px;
+  background-color: #a492bc;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.active {
+  border-color: #212120;
+  color: #212120;
+  background-color: #dec6ff;
+  box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.5), -.100rem -.100rem 0.5rem rgba(33, 33, 32, 0.5), .100rem .100rem 0.1rem rgba(33, 33, 32, 0.5);
+}
+
+.not-active {
+  background-color: #e6d4ff;
+  border-color: #757575;
+  color: #757575;
+  text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .aside-rewards {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+  
+  .reward-list {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 0px 0px;
+    background: none;
+  }
+
+  .reward-card {
+    display: flex;
+    width: 80%;
+    height: 30px;
+    background-color: #a492bc;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .background-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(21, 21, 21);
+    position: absolute;
+    left: 0px;
+
+    z-index: -1;
+  }
+
+  .aside-rewards {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 10px 20px 40px;
+    height: 100vh;
+    background-color: #dec6ff;
+
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .aside-rewards:target {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0);
+  }
+
+  .active {
+    border-color: #212120;
+    color: #212120;
+    background-color: #dec6ff;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.5), -.100rem -.100rem 0.5rem rgba(33, 33, 32, 0.5), .100rem .100rem 0.1rem rgba(33, 33, 32, 0.5);
+  }
+  
+  .not-active {
+    background-color: #e6d4ff;
+    border-color: #757575;
+    color: #757575;
+    text-decoration: line-through;
+  }
+}
