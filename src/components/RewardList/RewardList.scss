@@ -1,4 +1,5 @@
 @import '../../assets/style/colors.scss';
+@import '../../assets/style/box-shadow.scss';
 
 .aside-rewards {
   position: fixed;
@@ -36,11 +37,7 @@
   color: $reward-border;
   background-color: $secondary;
 
-  box-shadow: 
-    0 0 .1rem rgba(0, 0, 0, 0.5), 
-    -.100rem -.100rem 0.5rem rgba(33, 33, 32, 0.5), 
-    .100rem .100rem 0.1rem rgba(33, 33, 32, 0.5)
-  ;
+  box-shadow: $light-shadow-effect;
 }
 
 .not-active {
@@ -119,10 +116,7 @@
     border-color: $reward-border;
     color: $reward-border;
     background-color: $secondary;
-    box-shadow: 
-      0 0 .1rem rgba(0, 0, 0, 0.5),
-      -.100rem -.100rem 0.5rem rgba(33, 33, 32, 0.5),
-      .100rem .100rem 0.1rem rgba(33, 33, 32, 0.5);
+    box-shadow: $light-shadow-effect;
   }
   
   .not-active {
