@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import './ModalWindow.scss'
+import './ModalArea.scss'
 
-export function ModalWindow({ setSelectedTask }) {
+export function ModalArea({ setSelectedTask }) {
   const [modal, setModal] = useState(true);
 
   const toggleModal = () => {
@@ -13,12 +13,6 @@ export function ModalWindow({ setSelectedTask }) {
     setSelectedTask(task);
     toggleModal();
   };
-
-  if (!modal) {
-    document.body.classList.remove('active-modal')
-  } else {
-    document.body.classList.add('active-modal')
-  }
 
   return (
     <>

@@ -13,7 +13,6 @@
   cursor: pointer;
 
   font-family:
-    -apple-system,system-ui,
     "Segoe UI",
     Roboto,
     Helvetica,
@@ -40,14 +39,12 @@
   box-shadow: 
     0 0 .25rem rgba(0, 0, 0, 0.5),
     -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6),
-    .125rem .125rem 1rem rgba(244, 231, 255, 0.6)
-  ;
+    .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
 }
 
 .button:not([disabled]):hover {
   box-shadow: 
     0 0 .25rem rgba(0, 0, 0, 0.5),
     -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6),
-    .125rem .125rem 1rem rgba(244, 231, 255, 0.6)
-  ;
+    .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
 }

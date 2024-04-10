@@ -1,4 +1,4 @@
-h1{
+.current-reward{
   padding: 0px;
   margin-top: 5px;
 }
@@ -15,7 +15,7 @@ h1{
 .icon-like {
   width: 150px;
   height: 150px;
-  background-image: url(./like.svg);
+  background-image: url('../../assets/icons/like.svg');
   background-size: contain;
   margin-bottom: 50px;
 }
@@ -52,11 +52,17 @@ h1{
 }
 
   .back-btn:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6), .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
+    box-shadow: 
+      0 0 .25rem rgba(0, 0, 0, 0.5),
+      -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6),
+      .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
   }
   
   .back-btn:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6), .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
+    box-shadow: 
+      0 0 .25rem rgba(0, 0, 0, 0.5),
+     -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6),
+      .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
   }
 
 .total-text{

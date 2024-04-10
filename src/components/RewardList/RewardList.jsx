@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import classNames from 'classnames';
 
 import './RewardList.scss';
-import rewards from './rewards.json';
-// classNAmes
+import rewards from '../../data/rewards.json';
 
 export function RewardList({ step }) {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -16,7 +16,10 @@ export function RewardList({ step }) {
       {rewards.map((reward, index) => (
         <div
           key={index}
-          className={`reward-card ${activeIndex === index ? 'active' : ''} ${index < activeIndex ? 'not-active' : ''}`}
+          className={classNames('reward-card', {
+            'active': activeIndex === index,
+            'not-active': index < activeIndex
+          })}
         >
           {reward.cash}
           <div className='background-line'></div>

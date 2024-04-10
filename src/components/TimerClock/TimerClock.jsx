@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import classNames from 'classnames';
 import './TimerClock.scss';
-import { FinalPage } from '../FinalScreen/FinalPage';
+import { FinalPage } from '../../pages/FinalPage/FinalPage';
+
+const ONE_MINUTE = 60;
+const HALF_MINUTE = 30;
+const QUARTER_MINUTE = 15;
+const LAST_TIME = 5;
 
 export function TimerClock({ currentReward }) {
   const [secondsDegrees, setSecondsDegrees] = useState(90);
   const [remainingTime, setRemainingTime] = useState(60);
-  const [isTimeUp, setIsTimeUp] = useState(false);
   const [isHurryUp, setIsHurryUp] = useState(false);
 
   useEffect(() => {
@@ -13,16 +18,19 @@ export function TimerClock({ currentReward }) {
       setRemainingTime(prevTime => {
         if (prevTime <= 0) {
           clearInterval(interval);
-          setIsTimeUp(true);
           return 0;
         }
         return prevTime - 1;
       });
 
-      const newSecondsDegrees = ((60 - remainingTime) / 60) * 360 + 90;
+      const newSecondsDegrees = ((ONE_MINUTE - remainingTime) / ONE_MINUTE) * 360 + 90;
       setSecondsDegrees(newSecondsDegrees);
 
-      if (remainingTime === 30 || remainingTime === 15 || remainingTime === 5) {
+      if (
+          remainingTime === HALF_MINUTE 
+          || remainingTime === QUARTER_MINUTE
+          || remainingTime === LAST_TIME
+        ) {
         setIsHurryUp(true);
         setTimeout(() => {
           setIsHurryUp(false);
@@ -33,22 +41,16 @@ export function TimerClock({ currentReward }) {
     return () => clearInterval(interval);
   }, [remainingTime]);
 
-  if (isTimeUp) {
-    console.log('Time is end!')
+  if (remainingTime < 1) {
+    return <FinalPage currentReward={currentReward} />
   }
 
   return (
-    <>
-      {remainingTime > 0 ? (
-        <div className={"clock" + (isHurryUp ? " attention" : "")}>
-          <div className="clock-face">
-            <div className="hand second-hand" style={{ transform: `rotate(${secondsDegrees}deg)` }}></div>
-            <div className="center-dot"></div>
-          </div>
-        </div>
-      ) : (
-        <FinalPage currentReward={currentReward} />)
-      }
-    </>
+    <div className={classNames("clock", { "attention": isHurryUp })}>
+      <div className="clock-face">
+        <div className="hand second-hand" style={{ transform: `rotate(${secondsDegrees}deg)` }}></div>
+        <div className="center-dot"></div>
+      </div>
+    </div>
   );
 }
