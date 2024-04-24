@@ -14,16 +14,18 @@ export function RewardList({ step }) {
   return (
     <div className="reward-list">
       {rewards.map((reward, index) => (
-        <div
-          key={index}
-          className={classNames('reward-card', {
-            'active': activeIndex === index,
-            'not-active': index < activeIndex
-          })}
-        >
-          {reward.cash}
-          <div className='background-line'></div>
-        </div>
+        <>
+          <div
+            key={index}
+            className={classNames('reward-card', {
+              'active': activeIndex === index,
+              'not-active': index < activeIndex
+            })}
+          >
+            {reward.cash}
+          </div>
+        </>
+
       ))}
     </div>
   )

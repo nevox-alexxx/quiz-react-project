@@ -21,7 +21,7 @@
 
 .reward-card {
   display: flex;
-  width: 80%;
+  width: 76.5%;
   height: 40px;
   background-color: $primary;
   border: 1px solid $reward-border;
@@ -30,6 +30,8 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 .active {
@@ -46,7 +48,6 @@
   color: $reward-not-border;
   text-decoration: line-through;
 }
-
 
 @media screen and (max-width: 720px) {
 
