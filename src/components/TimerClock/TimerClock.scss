@@ -1,3 +1,5 @@
+@import '../../assets/style/colors.scss';
+
 .clock {
   width: 100px;
   height: 100px;
@@ -7,7 +9,7 @@
   top: 5%;
   padding: 2rem;
 
-  border: 5px solid #dec6ff;
+  border: 5px solid $secondary;
   border-radius: 50%;
   
   box-shadow:
@@ -15,15 +17,6 @@
     inset 0 0 0 3px #161616,
     inset 0 0 10px black,
     0 0 10px rgba(0,0,0,0.2);
-}
-
-.center-dot{
-  width: 20px;
-  height: 20px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .clock-face {
@@ -52,13 +45,16 @@
   top: 5%;
   padding: 2rem;
 
-  border: 5px solid #ff002f;
+  border: 5px solid $warning;
   border-radius: 50%;
-  animation: pulse-grow 0.5s infinite alternate, pulse-shrink 0.5s infinite alternate;
+  
+  animation: 
+    pulse-grow 0.5s infinite alternate, 
+    pulse-shrink 0.5s infinite alternate;
   
   box-shadow:
     0 0 0 4px rgba(185, 8, 8, 0.1),
-    inset 0 0 0 3px #c60a0a,
+    inset 0 0 0 3px $warning,
     inset 0 0 10px rgb(230, 19, 19),
     0 0 10px rgba(185, 8, 8, 0.2);
 }

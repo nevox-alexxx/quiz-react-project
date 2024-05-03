@@ -1,6 +1,10 @@
+@import '../../assets/style/colors.scss';
+@import '../../assets/style/box-shadow.scss';
+
 body.active-modal {
   overflow-y: hidden;
 }
+
 .topic-choise {
   position: fixed;
   width: 40%; 
@@ -20,18 +24,20 @@ body.active-modal {
 }
 
 .overlay {
-  background: #a492bc;
+  background: $primary;
   z-index: 0;
 }
+
 .modal-content {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
-  background: #a492bc;
+  background: $primary;
   padding: 14px 28px;
   border-radius: 3px;
+
   max-width: 600px;
   min-width: 300px;
 }
@@ -49,7 +55,6 @@ body.active-modal {
   color: #FFFFFF;
   cursor: pointer;
 
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 500;
   line-height: 2.5;
   outline: transparent;
@@ -61,19 +66,17 @@ body.active-modal {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  text-decoration: none;
 }
 
 .choise-page:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6), .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
+  box-shadow: $shadow-effect;
 }
 
 .choise-page:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(244, 231, 255, 0.6), .125rem .125rem 1rem rgba(244, 231, 255, 0.6);
+  box-shadow: $shadow-effect;
 }
 
 @media screen and (max-width: 720px) {
-
   .topic-choise {
     position: fixed;
     width: 50%; 
@@ -82,5 +85,4 @@ body.active-modal {
     left: 53%;
     transform: translate(-50%, -50%);
   }
-  
 }
