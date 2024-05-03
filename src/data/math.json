@@ -13,8 +13,8 @@
     "letter": ["A", "B", "C", "D"],
     "question": "What is the product of 5 * 8?",
     "variants": ["20", "35", "40", "56"],
-    "correct": 3,
-    "incorrectly": [0, 1, 2],
+    "correct": 2,
+    "incorrectly": [0, 1, 3],
     "price": "1,000"
   },
   {
@@ -22,8 +22,8 @@
     "letter": ["A", "B", "C", "D"],
     "question": "What is the square root of 144?",
     "variants": ["10", "11", "12", "13"],
-    "correct": 2,
-    "incorrectly": [0, 1, 3],
+    "correct": 3,
+    "incorrectly": [0, 1, 2],
     "price": "2,000"
   },
   {
@@ -31,8 +31,8 @@
     "letter": ["A", "B", "C", "D"],
     "question": "What is the result of 20 - 7?",
     "variants": ["10", "11", "12", "13"],
-    "correct": 1,
-    "incorrectly": [0, 2, 3],
+    "correct": 3,
+    "incorrectly": [0, 2, 1],
     "price": "4,000"
   },
   {
@@ -40,8 +40,8 @@
     "letter": ["A", "B", "C", "D"],
     "question": "What is the result of 48 ÷ 6?",
     "variants": ["6", "7", "8", "9"],
-    "correct": 2,
-    "incorrectly": [0, 1, 3],
+    "correct": 0,
+    "incorrectly": [2, 1, 3],
     "price": "8,000"
   },
   {
@@ -49,8 +49,8 @@
     "letter": ["A", "B", "C", "D"],
     "question": "What is the sum of the angles in a triangle?",
     "variants": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
-    "correct": 1,
-    "incorrectly": [0, 2, 3],
+    "correct": 2,
+    "incorrectly": [0, 1, 3],
     "price": "16,000"
   },
   {
@@ -85,8 +85,8 @@
     "letter": ["A", "B", "C", "D"],
     "question": "What is the result of the equation 3x + 7 = 16, when solved for x?",
     "variants": ["3", "4", "5", "6"],
-    "correct": 1,
-    "incorrectly": [0, 2, 3],
+    "correct": 0,
+    "incorrectly": [1, 2, 3],
     "price": "250,000"
   },
   {
