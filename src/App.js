@@ -1,11 +1,11 @@
-import { WellcomeScreen } from './components/WellcomeScreen/WellcomeScreen';
+import { StartingPage } from './pages/StartingPage/StartingPage';
 
 import './App.scss'
 import React from 'react';
 
 function App() {
   return (
-    <WellcomeScreen />
+    <StartingPage />
   );
 }
 

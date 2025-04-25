@@ -1,6 +1,5 @@
 body {
   height: 100%;
-  // background-color: #a492bc;
 }
 .nav {
   opacity: 0;
@@ -25,7 +24,7 @@ body {
   .menu-icon {
     width: 24px;
     height: 24px;
-    background-image: url(./icons/burger.png);
+    background-image: url('../../assets/icons/burger.png');
     background-size: cover;
     background-position: center;
     justify-content: flex-end;
@@ -34,7 +33,7 @@ body {
 
     &:hover {
       scale: 0.8;
-      background-image: url(./icons/open.png);
+      background-image: url('../../assets/icons/active.png');
     }
   }
 
@@ -50,7 +49,7 @@ body {
   .menu-icon-close {
     width: 20px;
     height: 20px;
-    background-image: url(./icons/x.png);
+    background-image: url('../../assets/icons/x.png');
     background-size: cover;
     background-position: center;
     margin-right: 5px;

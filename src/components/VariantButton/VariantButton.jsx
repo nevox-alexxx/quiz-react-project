@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
+
 import './VariantButton.scss';
 
 export function VariantButton({ task, onClickVariant, getButtonClass }) {
@@ -15,11 +17,11 @@ export function VariantButton({ task, onClickVariant, getButtonClass }) {
 
   return (
     <div className='grid-btn'>
-      {task.variants.map((text, index) => (
+      {task.variants?.map((text, index) => (
         <button
           onClick={() => handleClick(index)}
           key={index}
-          className={getButtonClass(index) + (index === focusedIndex ? ' focus' : '')}
+          className={classNames(getButtonClass(index), { 'focus': index === focusedIndex })}
         >
           <p>
             <b className='variant-letter'>{task.letter[index]} </b>

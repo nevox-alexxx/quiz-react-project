@@ -1,9 +1,8 @@
-import ActivityButton from '../ActivityButton/ActivityButton';
-import './WellcomeScreen.scss';
+import ActivityButton from '../../components/ActivityButton/ActivityButton';
+import './StartingPage.scss';
 
-export function WellcomeScreen() {
+export function StartingPage() {
   return (
-    <>
       <div className='introduction'>
         <div className='icon'></div>
 
@@ -12,6 +11,5 @@ export function WellcomeScreen() {
 
         <ActivityButton />
       </div>
-    </>
   )
 }

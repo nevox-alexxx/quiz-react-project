@@ -1,3 +1,6 @@
+@import '../../assets/style/colors.scss';
+@import '../../assets/style/box-shadow.scss';
+
 .aside-rewards {
   position: fixed;
   top: 0;
@@ -11,38 +14,40 @@
   flex-direction: column-reverse;
   padding: 10px 20px 0px;
   align-items: center;
-  background-color: #dec6ff;
+  background-color: $secondary;
   width: 25vw;
   height: 100vh;
 }
 
 .reward-card {
   display: flex;
-  width: 80%;
+  width: 76.5%;
   height: 40px;
-  background-color: #a492bc;
-  border: 1px solid black;
+  background-color: $primary;
+  border: 1px solid $reward-border;
   border-radius: 15px;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
 }
 
 .active {
-  border-color: #212120;
-  color: #212120;
-  background-color: #dec6ff;
-  box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.5), -.100rem -.100rem 0.5rem rgba(33, 33, 32, 0.5), .100rem .100rem 0.1rem rgba(33, 33, 32, 0.5);
+  border-color: $reward-border;
+  color: $reward-border;
+  background-color: $secondary;
+
+  box-shadow: $light-shadow-effect;
 }
 
 .not-active {
   background-color: #e6d4ff;
-  border-color: #757575;
-  color: #757575;
+  border-color: $reward-not-border;
+  color: $reward-not-border;
   text-decoration: line-through;
 }
-
 
 @media screen and (max-width: 720px) {
 
@@ -67,8 +72,8 @@
     display: flex;
     width: 80%;
     height: 30px;
-    background-color: #a492bc;
-    border: 1px solid black;
+    background-color: $primary;
+    border: 1px solid $reward-border;
     border-radius: 15px;
     text-align: center;
     flex-direction: column;
@@ -94,7 +99,7 @@
 
     padding: 10px 20px 40px;
     height: 100vh;
-    background-color: #dec6ff;
+    background-color: $secondary;
 
     opacity: 0;
     transform: translateX(100%);
@@ -109,16 +114,16 @@
   }
 
   .active {
-    border-color: #212120;
-    color: #212120;
-    background-color: #dec6ff;
-    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.5), -.100rem -.100rem 0.5rem rgba(33, 33, 32, 0.5), .100rem .100rem 0.1rem rgba(33, 33, 32, 0.5);
+    border-color: $reward-border;
+    color: $reward-border;
+    background-color: $secondary;
+    box-shadow: $light-shadow-effect;
   }
   
   .not-active {
     background-color: #e6d4ff;
-    border-color: #757575;
-    color: #757575;
+    border-color: $reward-not-border;
+    color: $reward-not-border;
     text-decoration: line-through;
   }
 }
